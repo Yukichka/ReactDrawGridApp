@@ -1,2 +1,0 @@
-# ReactDrawGridApp
-Created with CodeSandbox
