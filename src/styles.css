@@ -5,13 +5,15 @@
 .blackSquare {
   height: 50px;
   width: 50px;
-  float: left;
+  display: inline-block;
+
   background-color: #555;
 }
 
 .whiteSquare {
   height: 50px;
   width: 50px;
-  float: left;
+  display: inline-block;
+
   background-color: #fff;
 }
