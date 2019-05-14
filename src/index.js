@@ -35,7 +35,7 @@ class InputField extends React.Component {
   handleChange(event) {
     this.setState({ inputText: event.target.value });
     console.log(`you texed:${this.state.inputText}`);
-    this.props.onUpdate(this.state.inputText);
+    this.props.onUpdate(event.target.value);
     // event.preventDefault();
   }
   render() {
@@ -66,11 +66,11 @@ class DisplayField extends React.Component {
     console.log("splitted inputText: ", splittedInput);
 
     const transformedInput = splittedInput.map(c => {
-      if (c == "x") {
+      if (c === "x") {
         return <span className="whiteSquare" />;
-      } else if (c == "o") {
+      } else if (c === "o") {
         return <span className="blackSquare" />;
-      } else if (c == "\n") {
+      } else if (c === "\n") {
         return <div />;
       } else {
         return <div />;
